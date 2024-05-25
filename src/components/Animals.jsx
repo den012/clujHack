@@ -109,7 +109,7 @@ const Animals = () => {
       }
 
     return (
-        <div className="h-screen w-full rounded-md relative flex flex-col items-center justify-center antialiased" style={{background: 'linear-gradient(to right, #000000, #222222)'}}>
+        <div className="h-screen w-full rounded-md relative flex flex-col items-center justify-center antialiased" style={{background: 'linear-gradient(to top, #222222, #000000)'}}>
             <div className="max-w-5xl mx-auto p-4 flex flex-row justify-center items-center">
                 <div>
                     <h1 className="mb-9 relative z-10 text-xl md:text-4xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold" style={{lineHeight: '1.5'}}>
@@ -135,9 +135,9 @@ const Animals = () => {
                     </div>
                     <div className="flex flex-col items-center mt-4">
                         <div className="flex flex-row justify-center items-center mt-4">
-                            <button onClick={prevVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-bold py-2 px-4 rounded-l-md mr-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg scale-100">Prev</button>
-                            <button onClick={selectVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-bold py-2 px-4 rounded-l-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg scale-100">Pick me!</button>
-                            <button onClick={nextVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-bold py-2 px-4 rounded-r-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg scale-100">Next</button>
+                            <button onClick={prevVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700 font-bold py-2 px-4 rounded-l-md mr-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg scale-100">Prev</button>
+                            <button onClick={selectVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700 font-bold py-2 px-4 rounded-l-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg scale-100">Pick me!</button>
+                            <button onClick={nextVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700 font-bold py-2 px-4 rounded-r-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg scale-100">Next</button>
                         </div>
                     </div>
                 </div>
