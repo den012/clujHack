@@ -1,6 +1,7 @@
 import React from "react";
 import {useState } from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import BearSpeak from "../assets/bear.mp4";
 import BoySpeak from "../assets/boy.mp4";
@@ -78,9 +79,11 @@ const Animals = () => {
         return () => clearInterval(interval); // Clean up on component unmount
     }, []);
 
+    const navigate = useNavigate();
 
     const selectVideo = () => {
         console.log("Selected video", currentVideo);
+        navigate('/Chat');
     }
 
     return (

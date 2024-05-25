@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Hero from "./components/Hero";
 import Animals from "./components/Animals";
 import Chat from "./components/Chat";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 
 
 const App = () => {
