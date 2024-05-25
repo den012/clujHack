@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Hero from "./components/Hero";
 import Animals from "./components/Animals";
-import Navbar from "./components/navbar";
+import Chat from "./components/Chat";
+import Navbar from "./components/Navbar";
+
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Hero/>} />
           <Route path="/Hero" element={<Hero/>} />
           <Route path="/Animals" element={<Animals />} />
+          <Route path="/Chat" element={<Chat />} />
         </Routes>
       </Router>
     </main>
