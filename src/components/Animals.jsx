@@ -53,24 +53,24 @@ const Animals = () => {
                     <h1 className="relative z-10 text-xl md:text-4xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
                         Choose your favourite talking peer
                     </h1>
-                    <div className="flex overflow-x-hidden">
-                        <video key={prev} autoPlay muted loop style={{opacity: '30%', width: '33.33%', height: '100%'}}>
+                    <div className="flex overflow-x-hidden mt-4">
+                        <video key={prev} autoPlay muted loop style={{opacity: '30%', width: '30%', height: '100%', transition: 'opacity 1s, width 1s'}}>
                             <source src={prev} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                        <video key={current} autoPlay muted loop style={{width: '40%', height: '100%'}}>
+                        <video key={current} autoPlay muted loop style={{width: '40%', height: '100%', transition: 'opacity 1s, width 1s'}}>
                             <source src={current} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                        <video key={next} preload = "auto" autoPlay muted loop style={{opacity: '30%', width: '33.33%', height: '100%'}}>
+                        <video key={next} preload = "auto" autoPlay muted loop style={{opacity: '30%', width: '30%', height: '100%', transition: 'opacity 1s, width 1s'}}>
                             <source src={next} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         
                     </div>
-                    <div className="flex flex-row justify-center items-center">
-                        <button onClick={prevVideo} className="bg-neutral-300 text-neutral-900 font-bold py-2 px-4 rounded-l-md">Previous</button>
-                        <button onClick={nextVideo} className="bg-neutral-300 text-neutral-900 font-bold py-2 px-4 rounded-r-md">Next</button>
+                    <div className="flex flex-row justify-center items-center mt-4">
+                        <button onClick={prevVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-bold py-2 px-4 rounded-l-md mr-4">Prev</button>
+                        <button onClick={nextVideo} className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-bold py-2 px-4 rounded-r-md">Next</button>
                     </div>
                 </div>
             </div>
