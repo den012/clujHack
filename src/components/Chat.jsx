@@ -14,8 +14,6 @@ import PigSpeak from "../assets/pig.mp4";
 import SharkSpeak from "../assets/shark.mp4";
 
 
-import Typist from 'react-typist';
-
 
 const animals = [
     BearSpeak,

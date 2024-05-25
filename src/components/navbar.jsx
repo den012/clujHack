@@ -16,10 +16,10 @@ const Navbar = () => {
                     <Link to={"/"} className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                     </Link>
                     <NavLink to={"/Hero"} className="block mt-4 lg:inline-block lg:mt-0 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  mr-4">
-                        Hero
+                        Home
                     </NavLink>
                     <NavLink to={"/Animals"} className="block mt-4 lg:inline-block lg:mt-0 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mr-4">
-                        Animals
+                        Talk to me
                     </NavLink>
                 </div>
             </div>
