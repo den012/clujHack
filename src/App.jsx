@@ -7,7 +7,7 @@ import Animals from "./components/Animals";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Hero /> */}
+      <Hero />
       <Animals />
       {/* <1 />
       <2 /> */}
