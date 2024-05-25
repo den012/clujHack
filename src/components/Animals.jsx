@@ -81,10 +81,32 @@ const Animals = () => {
 
     const navigate = useNavigate();
 
-    const selectVideo = () => {
+    const selectVideo = async () => {
         console.log("Selected video", currentVideo);
+        const index = currentVideo;
+        console.log(index);
+      
+        try {
+          const response = await fetch('http://localhost:3000/saveVideo', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ video: index }),
+          });
+      
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+      
+          const data = await response.json();
+          console.log('Video data saved successfully:', data);
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      
         navigate('/Chat');
-    }
+      }
 
     return (
         <div className="h-screen w-full rounded-md relative flex flex-col items-center justify-center antialiased" style={{background: 'linear-gradient(to right, #000000, #222222)'}}>
